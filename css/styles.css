@@ -1202,6 +1202,14 @@ footer {
     transform: scale(1.2);
 }
 
+.carousel-disclaimer {
+    text-align: center;
+    color: var(--text-light);
+    font-size: var(--font-sm);
+    margin-top: var(--space-lg);
+    font-style: italic;
+}
+
 /* ========================================
    RESPONSIVE
    ======================================== */
