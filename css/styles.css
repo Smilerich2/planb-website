@@ -1201,15 +1201,57 @@ footer {
     justify-content: center;
 }
 
-/* Keyboard Demo */
-.keyboard-demo {
-    display: flex;
-    gap: var(--space-sm);
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: var(--space-xl);
+/* Feedback Demo */
+.feedback-demo {
     background: var(--bg-light);
     border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+}
+
+.feedback-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.feedback-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+    background: white;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-fast);
+}
+
+.feedback-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+    border-color: var(--primary-color);
+}
+
+.feedback-item img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.feedback-grade {
+    font-weight: 700;
+    font-size: var(--font-lg);
+    color: var(--text-dark);
+}
+
+.keyboard-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    color: var(--text-light);
+    font-size: var(--font-sm);
 }
 
 .key {
@@ -1228,13 +1270,64 @@ footer {
     transition: all var(--transition-fast);
 }
 
+.key-sm {
+    width: 32px;
+    height: 32px;
+    font-size: var(--font-sm);
+}
+
 .key:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 0 var(--border-color);
 }
 
-.key-spacer {
-    width: var(--space-lg);
+/* Custom Feedback Demo */
+.custom-feedback-demo {
+    display: flex;
+    gap: var(--space-md);
+    padding: var(--space-xl);
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+}
+
+.custom-feedback-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background: white;
+    border-radius: var(--radius-md);
+    border: 2px dashed var(--border-color);
+    flex: 1;
+    transition: all var(--transition-fast);
+}
+
+.custom-feedback-card:hover {
+    border-color: var(--primary-color);
+    border-style: solid;
+    transform: translateY(-2px);
+}
+
+.custom-feedback-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-light);
+    border-radius: var(--radius-md);
+}
+
+.custom-feedback-icon svg {
+    stroke: var(--primary-color);
+}
+
+.custom-feedback-card span {
+    font-size: var(--font-sm);
+    font-weight: 500;
+    color: var(--text-dark);
+    text-align: center;
 }
 
 /* School Types */
