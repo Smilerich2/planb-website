@@ -1004,6 +1004,85 @@ footer {
 }
 
 /* ========================================
+   LEGAL PAGES (Impressum, Datenschutz)
+   ======================================== */
+.legal-page {
+    padding: 120px var(--space-3xl) 80px;
+    background: var(--bg-white);
+    min-height: calc(100vh - 200px);
+}
+
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legal-content h1 {
+    font-size: var(--font-4xl);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: var(--space-3xl);
+    letter-spacing: -0.5px;
+}
+
+.legal-content h2 {
+    font-size: var(--font-2xl);
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-top: var(--space-3xl);
+    margin-bottom: var(--space-lg);
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--border-color);
+}
+
+.legal-content h2:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+.legal-content h3 {
+    font-size: var(--font-xl);
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+}
+
+.legal-content p {
+    color: var(--text-light);
+    font-size: var(--font-base);
+    line-height: 1.8;
+    margin-bottom: var(--space-lg);
+}
+
+.legal-content ul {
+    color: var(--text-light);
+    font-size: var(--font-base);
+    line-height: 1.8;
+    margin-bottom: var(--space-lg);
+    padding-left: var(--space-2xl);
+}
+
+.legal-content li {
+    margin-bottom: var(--space-sm);
+}
+
+.legal-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.legal-content a:hover {
+    color: var(--app-orange-dark);
+    text-decoration: underline;
+}
+
+.legal-content strong {
+    color: var(--text-dark);
+}
+
+/* ========================================
    RESPONSIVE
    ======================================== */
 @media (max-width: 1000px) {
