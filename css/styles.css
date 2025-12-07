@@ -397,6 +397,17 @@ nav {
     gap: var(--space-md);
 }
 
+/* 7-item grid layout (3-3-1) */
+.app-grid-7 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+}
+
+.app-grid-7 .app-tile:nth-child(7) {
+    grid-column: 1;
+}
+
 /* App Tiles - styled like PlanB feature items */
 .app-tile {
     display: flex;
