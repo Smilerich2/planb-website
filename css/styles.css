@@ -673,6 +673,13 @@ nav {
     font-size: var(--font-4xl);
 }
 
+.signature-icon-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
 .signature-text {
     display: flex;
     flex-direction: column;
