@@ -1115,7 +1115,6 @@ footer {
 .carousel {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: var(--space-lg);
     max-width: 800px;
     margin: 0 auto;
@@ -1123,6 +1122,7 @@ footer {
 }
 
 .carousel-track-container {
+    width: 100%;
     overflow: hidden;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
@@ -1133,20 +1133,17 @@ footer {
 .carousel-track {
     display: flex;
     transition: transform 0.4s ease;
+    width: 100%;
 }
 
 .carousel-slide {
+    width: 100%;
     min-width: 100%;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex: 0 0 100%;
 }
 
 .carousel-slide img {
-    max-width: 100%;
-    max-height: 450px;
-    width: auto;
+    width: 100%;
     height: auto;
     display: block;
 }
