@@ -3,8 +3,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Carousel functionality
     initCarousel();
+    initLightbox();
 });
 
 function initCarousel() {
@@ -59,8 +59,9 @@ function initCarousel() {
     nextBtn.addEventListener('click', nextSlide);
     prevBtn.addEventListener('click', prevSlide);
 
-    // Keyboard navigation
+    // Keyboard navigation (only when lightbox is not open)
     document.addEventListener('keydown', (e) => {
+        if (document.querySelector('.lightbox.active')) return;
         if (e.key === 'ArrowLeft') prevSlide();
         if (e.key === 'ArrowRight') nextSlide();
     });
@@ -90,4 +91,44 @@ function initCarousel() {
             }
         }
     }
+}
+
+function initLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+    const lightboxClose = lightbox.querySelector('.lightbox-close');
+    const carouselImages = document.querySelectorAll('.carousel-slide img');
+
+    if (!lightbox || carouselImages.length === 0) return;
+
+    // Open lightbox on image click
+    carouselImages.forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Close lightbox
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    // Close on background click
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
 }
