@@ -1116,7 +1116,7 @@ footer {
     display: flex;
     align-items: center;
     gap: var(--space-lg);
-    max-width: 900px;
+    max-width: 600px;
     margin: 0 auto;
     position: relative;
 }
