@@ -1116,7 +1116,7 @@ footer {
     display: flex;
     align-items: center;
     gap: var(--space-lg);
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     position: relative;
 }
@@ -1124,8 +1124,9 @@ footer {
 .carousel-track-container {
     overflow: hidden;
     flex: 1;
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
 }
 
 .carousel-track {
@@ -1142,7 +1143,6 @@ footer {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: var(--radius-xl);
 }
 
 .carousel-btn {
