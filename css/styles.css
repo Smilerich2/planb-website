@@ -195,6 +195,28 @@ nav {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Coming Soon Buttons */
+.nav-cta-soon {
+    background: var(--text-light);
+    cursor: default;
+}
+
+.nav-cta-soon:hover {
+    background: var(--text-light);
+    transform: none;
+}
+
+.btn-soon {
+    background: var(--text-light);
+    cursor: default;
+}
+
+.btn-soon:hover {
+    background: var(--text-light);
+    transform: none;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* ========================================
    HERO SECTION
    ======================================== */
