@@ -1131,7 +1131,7 @@ footer {
    FEATURE HIGHLIGHTS
    ======================================== */
 .feature-highlights {
-    padding: 0 var(--space-2xl) 100px;
+    padding: 0 var(--space-2xl) var(--space-3xl);
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
