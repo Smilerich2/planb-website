@@ -1556,6 +1556,8 @@ footer {
     width: 100%;
     min-width: 100%;
     flex: 0 0 100%;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 .carousel-slide img {
@@ -1635,11 +1637,15 @@ footer {
 
 .carousel-caption {
     text-align: center;
-    color: var(--text-dark);
-    font-size: var(--font-base);
+    color: var(--text-light);
+    font-size: var(--font-sm);
     margin-top: var(--space-md);
-    padding: 0 var(--space-lg);
+    padding: 0;
     line-height: 1.5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* Lightbox */
