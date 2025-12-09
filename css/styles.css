@@ -644,6 +644,58 @@ nav {
 }
 
 /* ========================================
+   CHANGELOG SECTION
+   ======================================== */
+.changelog {
+    padding: 70px var(--space-2xl);
+    background: var(--bg-body);
+}
+
+.changelog-version {
+    color: var(--text-light);
+    font-size: var(--font-base);
+}
+
+.changelog-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.changelog-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    padding: var(--space-sm) var(--space-lg);
+    transition: all var(--transition-fast);
+}
+
+.changelog-badge:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.badge-version {
+    background: var(--primary-color);
+    color: white;
+    font-size: var(--font-xs);
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+}
+
+.badge-text {
+    font-size: var(--font-sm);
+    color: var(--text-dark);
+}
+
+/* ========================================
    STORY SECTION
    ======================================== */
 .story {
