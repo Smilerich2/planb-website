@@ -1633,6 +1633,15 @@ footer {
     cursor: zoom-in;
 }
 
+.carousel-caption {
+    text-align: center;
+    color: var(--text-dark);
+    font-size: var(--font-base);
+    margin-top: var(--space-md);
+    padding: 0 var(--space-lg);
+    line-height: 1.5;
+}
+
 /* Lightbox */
 .lightbox {
     position: fixed;
