@@ -648,7 +648,7 @@ nav {
    ======================================== */
 .changelog {
     padding: 70px var(--space-2xl);
-    background: var(--bg-body);
+    background: var(--bg-light);
 }
 
 .changelog-version {
@@ -656,43 +656,68 @@ nav {
     font-size: var(--font-base);
 }
 
-.changelog-badges {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-md);
-    max-width: 900px;
+.changelog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.changelog-badge {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
+.changelog-card {
     background: white;
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
-    border-radius: var(--radius-full);
-    padding: var(--space-sm) var(--space-lg);
     transition: all var(--transition-fast);
 }
 
-.changelog-badge:hover {
+.changelog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
     border-color: var(--primary-color);
-    box-shadow: var(--shadow-sm);
 }
 
-.badge-version {
-    background: var(--primary-color);
-    color: white;
-    font-size: var(--font-xs);
+.changelog-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-md);
+}
+
+.changelog-icon svg {
+    stroke: white;
+}
+
+.changelog-card h3 {
+    font-size: var(--font-base);
     font-weight: 600;
-    padding: 2px 8px;
-    border-radius: var(--radius-full);
+    margin-bottom: var(--space-sm);
+    color: var(--text-dark);
 }
 
-.badge-text {
+.changelog-card p {
     font-size: var(--font-sm);
-    color: var(--text-dark);
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .changelog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .changelog-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ========================================
