@@ -1072,6 +1072,13 @@ nav {
     border-left: 3px solid #ff6b35;
 }
 
+.pricing-hint {
+    font-size: var(--font-sm);
+    color: var(--text-light);
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
 .pricing-platforms {
     display: flex;
     gap: var(--space-md);
