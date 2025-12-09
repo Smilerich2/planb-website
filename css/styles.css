@@ -1079,6 +1079,12 @@ nav {
     margin-bottom: var(--space-md);
 }
 
+.pricing-tax-hint {
+    font-size: var(--font-sm);
+    color: var(--text-light);
+    margin-top: var(--space-sm);
+}
+
 .pricing-platforms {
     display: flex;
     gap: var(--space-md);
